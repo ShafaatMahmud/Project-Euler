@@ -1,0 +1,16 @@
+#The function takes in a number and finds the sum of all the multiples of 3 or 5 below that number
+
+import numpy as np
+def func(num):
+  array = [].            #empty array to store the numbers
+  for i in range(num):
+    if i%5==0 or i%3==0:    #required condition
+      array.append(i)
+    j=0
+    for numbers in array:
+      j += numbers.           #addition of the numbers
+  
+  return j
+
+print(func(1000))
+#print(array)
